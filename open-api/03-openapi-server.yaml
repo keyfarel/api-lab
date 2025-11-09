@@ -2,6 +2,7 @@ openapi: 3.0.0
 info:
   title: Sample API
   version: 1.0.0
+
 servers:
   - url: http://{enviroment}.api.example.com/v1
     description: Development server
@@ -13,4 +14,5 @@ servers:
           - dev
           - staging
           - prod
+          
 paths: {}

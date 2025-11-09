@@ -2,8 +2,11 @@ openapi: 3.0.0
 info:
   title: Sample API
   version: 1.0.0
+
 servers: []
+
 externalDocs:
   url: http://example.com/docs
   description: Find more info here
+
 paths: {}

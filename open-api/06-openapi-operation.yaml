@@ -9,22 +9,14 @@ paths:
   /example:
     get:
       summary: Get example data
-      responses:
-        '200':
-          description: Success
+      responses: {}
     post:
       summary: Create example data
-      responses:
-        '201':
-          description: Created
+      responses: {}
   /example/{id}:
     put:
       summary: Update example data
-      responses:
-        '200':
-          description: Updated
+      responses: {}
     delete:
       summary: Delete example data
-      responses:
-        '204':
-          description: Deleted
+      responses: {}
