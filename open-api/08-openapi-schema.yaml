@@ -1,0 +1,70 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+
+servers: []
+
+paths: 
+  /example:
+    get:
+      summary: Get example data
+      description: Retrieve a list of example items
+      parameters:
+        - name: include_done
+          in: query
+          description: Is Include done items
+          required: false
+          schema:
+            type: boolean
+            nullable: true
+            default: true
+        - name: name
+          in: query
+          description: Filter by name
+          required: false
+          schema:
+            type: boolean
+            nullable: true
+            default: false
+      responses: {}
+    post:
+      summary: Create example data
+      description: Create a new example item
+      parameters:
+        - name: body
+          in: body
+          description: Example item to create
+          required: true
+          schema:
+            type: string
+            minLength: 3
+            maxLength: 50
+      responses: {}
+  /example/{id}:
+    put:
+      summary: Update example data
+      description: Update an existing example item by ID
+      parameters:
+        - name: id
+          in: path
+          description: ID of the example item
+          required: true
+          schema:
+            type: string
+            minLength: 3
+            maxLength: 50
+      responses: {}
+    delete:
+      summary: Delete example data
+      description: Delete an existing example item by ID
+      parameters:
+        - name: id
+          in: path
+          description: ID of the example item
+          required: true
+          schema:
+            type: string
+            minLength: 3
+            maxLength: 50
+      responses: {}
