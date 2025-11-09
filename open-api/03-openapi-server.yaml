@@ -2,5 +2,15 @@ openapi: 3.0.0
 info:
   title: Sample API
   version: 1.0.0
-servers: []
+servers:
+  - url: http://{enviroment}.api.example.com/v1
+    description: Development server
+    variables:
+      enviroment:
+        default: dev
+        description: The environment to use
+        enum:
+          - dev
+          - staging
+          - prod
 paths: {}
