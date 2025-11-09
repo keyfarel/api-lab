@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+
+servers: []
+
+paths: 
+  /example:
+    get:
+      summary: Get example data
+      responses:
+        '200':
+          description: Success
+    post:
+      summary: Create example data
+      responses:
+        '201':
+          description: Created
+  /example/{id}:
+    put:
+      summary: Update example data
+      responses:
+        '200':
+          description: Updated
+    delete:
+      summary: Delete example data
+      responses:
+        '204':
+          description: Deleted
